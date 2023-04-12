@@ -1,0 +1,85 @@
+1. apa nama aplikasi
+aplikasi penjualan kasir
+
+2. siapa penggunanya
+- kasir
+- gudang
+
+3. apa yang dilakukan kasir
+- melakukan login --> (antarmuka, alur, data)
+- mengubah akun
+- melakukan penjualan
+    - memilih produknya
+    - menginput jumlahnya
+    - menginput uang bayar si pelanggan
+- melihat laporan penjualan
+- membatalkan/menghapus penjualan
+- melakukan logout
+
+4. apa yang dilakukan gudang
+- melakukan login
+- mengubah akun
+- mengelola supplier
+- mengelola kategori produk
+- mengelola produk
+- mengelola kasir
+- melihat laporan penjualan
+- melakukan logout
+
+user
+---
+id_user
+email_user
+password_user
+nama_user
+level_user (kasir,gudang)
+
+id_pelanggan
+------------
+nama_pelanggan
+tlp_pelanggan
+email_pelanggan
+alamat_pelanggan
+
+penjualan
+------------
+id_penjualan
+id_pelanggan
+id_user
+tanggal_penjualan
+total_penjualan
+bayar_penjualan
+kembalian_penjualan
+
+penjualan_produk
+id_penjualan_produk
+id_penjualan
+id_produk 
+harga_beli 4000
+nama_jual
+harga_jual 5000
+jumlah_jual
+subtotal_jual
+
+kategori
+---------
+id_kategori
+nama_kategori
+
+supplier
+---------
+id_supplier
+nama_supplier
+
+produk
+-------
+id_produk
+kode_produk --> barcode
+id_kategori
+id_supplier
+nama_produk
+beli_produk
+jual_produk
+stok_produk
+foto_produk
+keterangan_produk
